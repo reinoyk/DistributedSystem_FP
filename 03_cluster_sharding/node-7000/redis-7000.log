@@ -1,0 +1,725 @@
+79184:C 12 Dec 2025 17:09:14.389 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+79184:C 12 Dec 2025 17:09:14.393 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=79184, just started
+79184:C 12 Dec 2025 17:09:14.396 # Configuration loaded
+79184:M 12 Dec 2025 17:09:14.412 * No cluster configuration found, I'm f0eeaed4876319927f3fba34a28eaf517596c0e6
+79184:M 12 Dec 2025 17:09:14.427 * Running mode=cluster, port=7000.
+79184:M 12 Dec 2025 17:09:14.432 # Server initialized
+79184:M 12 Dec 2025 17:09:14.438 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+79184:M 12 Dec 2025 17:09:14.443 * Ready to accept connections
+79184:M 12 Dec 2025 17:09:18.533 # configEpoch set to 1 via CLUSTER SET-CONFIG-EPOCH
+79184:M 12 Dec 2025 17:09:18.575 # IP address for this node updated to 127.0.0.1
+79184:M 12 Dec 2025 17:09:21.511 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:21.513 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '7e53ae8bb21cdc276479ef1c8494970812c8fc60', my replication IDs are '25a438177f98977a76bb3455dc54372ee722eed8' and '0000000000000000000000000000000000000000')
+79184:M 12 Dec 2025 17:09:21.515 * Replication backlog created, my new replication IDs are 'ee715abe90a11006ec52bbba49e9a36d0653e62f' and '0000000000000000000000000000000000000000'
+79184:M 12 Dec 2025 17:09:21.518 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:21.521 * Background saving started by pid 79244
+79244:C 12 Dec 2025 17:09:21.531 * DB saved on disk
+79244:C 12 Dec 2025 17:09:21.533 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:21.594 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:21.604 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:21.621 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:22.531 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:22.534 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:22.537 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:22.540 * Background saving started by pid 79250
+79250:C 12 Dec 2025 17:09:22.551 * DB saved on disk
+79250:C 12 Dec 2025 17:09:22.554 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:22.619 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:22.635 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:22.665 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:23.536 # Cluster state changed: ok
+79184:M 12 Dec 2025 17:09:23.539 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:23.541 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:23.543 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:23.546 * Background saving started by pid 79261
+79261:C 12 Dec 2025 17:09:23.555 * DB saved on disk
+79261:C 12 Dec 2025 17:09:23.558 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:23.641 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:23.656 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:23.699 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:24.561 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:24.564 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:24.567 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:24.572 * Background saving started by pid 79267
+79267:C 12 Dec 2025 17:09:24.583 * DB saved on disk
+79267:C 12 Dec 2025 17:09:24.588 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:24.676 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:24.685 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:24.702 # Connection with replica client id #8 lost.
+79184:M 12 Dec 2025 17:09:25.578 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:25.580 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:25.583 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:25.588 * Background saving started by pid 79274
+79274:C 12 Dec 2025 17:09:25.605 * DB saved on disk
+79274:C 12 Dec 2025 17:09:25.608 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:25.697 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:25.715 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:25.746 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:26.607 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:26.612 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:26.614 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:26.620 * Background saving started by pid 79281
+79281:C 12 Dec 2025 17:09:26.637 * DB saved on disk
+79281:C 12 Dec 2025 17:09:26.641 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:26.725 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:26.736 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:26.766 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:27.608 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:27.610 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:27.611 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:27.613 * Background saving started by pid 79288
+79288:C 12 Dec 2025 17:09:27.625 * DB saved on disk
+79288:C 12 Dec 2025 17:09:27.628 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:27.640 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:27.645 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:27.658 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:28.631 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:28.634 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:28.636 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:28.638 * Background saving started by pid 79295
+79295:C 12 Dec 2025 17:09:28.646 * DB saved on disk
+79295:C 12 Dec 2025 17:09:28.648 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:28.750 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:28.757 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:28.771 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:29.646 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:29.647 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:29.649 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:29.652 * Background saving started by pid 79302
+79302:C 12 Dec 2025 17:09:29.663 * DB saved on disk
+79302:C 12 Dec 2025 17:09:29.665 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:29.764 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:29.771 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:29.786 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:30.656 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:30.659 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:30.663 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:30.667 * Background saving started by pid 79310
+79310:C 12 Dec 2025 17:09:30.682 * DB saved on disk
+79310:C 12 Dec 2025 17:09:30.686 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:30.776 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:30.782 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:30.797 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:31.672 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:31.675 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:31.679 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:31.683 * Background saving started by pid 79316
+79316:C 12 Dec 2025 17:09:31.698 * DB saved on disk
+79316:C 12 Dec 2025 17:09:31.703 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:31.790 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:31.796 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:31.813 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:32.681 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:32.685 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:32.689 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:32.692 * Background saving started by pid 79322
+79322:C 12 Dec 2025 17:09:32.706 * DB saved on disk
+79322:C 12 Dec 2025 17:09:32.710 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:32.802 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:32.809 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:32.827 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:33.693 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:33.696 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:33.698 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:33.703 * Background saving started by pid 79330
+79330:C 12 Dec 2025 17:09:33.715 * DB saved on disk
+79330:C 12 Dec 2025 17:09:33.718 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:33.814 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:33.825 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:33.843 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:34.702 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:34.704 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:34.706 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:34.709 * Background saving started by pid 79337
+79337:C 12 Dec 2025 17:09:34.723 * DB saved on disk
+79337:C 12 Dec 2025 17:09:34.727 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:34.827 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:34.832 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:34.846 # Connection with replica client id #18 lost.
+79184:M 12 Dec 2025 17:09:35.713 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:35.715 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:35.718 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:35.721 * Background saving started by pid 79343
+79343:C 12 Dec 2025 17:09:35.736 * DB saved on disk
+79343:C 12 Dec 2025 17:09:35.740 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:35.836 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:35.843 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:35.861 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:36.729 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:36.734 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:36.737 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:36.742 * Background saving started by pid 79352
+79352:C 12 Dec 2025 17:09:36.757 * DB saved on disk
+79352:C 12 Dec 2025 17:09:36.760 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:36.848 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:36.857 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:36.877 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:37.734 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:37.736 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:37.738 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:37.741 * Background saving started by pid 79357
+79357:C 12 Dec 2025 17:09:37.753 * DB saved on disk
+79357:C 12 Dec 2025 17:09:37.755 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:37.759 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:37.764 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:37.781 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:38.742 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:38.745 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:38.747 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:38.751 * Background saving started by pid 79365
+79365:C 12 Dec 2025 17:09:38.768 * DB saved on disk
+79365:C 12 Dec 2025 17:09:38.772 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:38.871 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:38.879 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:38.894 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:39.757 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:39.760 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:39.764 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:39.769 * Background saving started by pid 79371
+79371:C 12 Dec 2025 17:09:39.785 * DB saved on disk
+79371:C 12 Dec 2025 17:09:39.788 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:39.888 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:39.900 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:39.916 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:40.773 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:40.775 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:40.780 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:40.788 * Background saving started by pid 79380
+79380:C 12 Dec 2025 17:09:40.803 * DB saved on disk
+79380:C 12 Dec 2025 17:09:40.808 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:40.904 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:40.915 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:40.936 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:41.781 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:41.784 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:41.786 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:41.790 * Background saving started by pid 79387
+79387:C 12 Dec 2025 17:09:41.805 * DB saved on disk
+79387:C 12 Dec 2025 17:09:41.808 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:41.815 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:41.822 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:41.836 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:42.794 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:42.796 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:42.801 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:42.806 * Background saving started by pid 79394
+79394:C 12 Dec 2025 17:09:42.815 * DB saved on disk
+79394:C 12 Dec 2025 17:09:42.818 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:42.825 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:42.830 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:42.844 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:43.808 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:43.811 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:43.814 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:43.819 * Background saving started by pid 79400
+79400:C 12 Dec 2025 17:09:43.831 * DB saved on disk
+79400:C 12 Dec 2025 17:09:43.835 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:43.936 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:43.941 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:43.955 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:44.819 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:44.822 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:44.824 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:44.828 * Background saving started by pid 79406
+79406:C 12 Dec 2025 17:09:44.840 * DB saved on disk
+79406:C 12 Dec 2025 17:09:44.843 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:44.846 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:44.852 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:44.869 # Connection with replica client id #28 lost.
+79184:M 12 Dec 2025 17:09:45.833 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:45.837 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:45.840 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:45.845 * Background saving started by pid 79413
+79413:C 12 Dec 2025 17:09:45.857 * DB saved on disk
+79413:C 12 Dec 2025 17:09:45.860 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:45.960 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:45.968 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:45.990 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:46.891 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:46.896 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:46.902 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:46.918 * Background saving started by pid 79421
+79421:C 12 Dec 2025 17:09:46.939 * DB saved on disk
+79421:C 12 Dec 2025 17:09:46.944 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:46.973 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:46.987 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:47.044 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:47.881 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:47.884 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:47.886 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:47.890 * Background saving started by pid 79427
+79427:C 12 Dec 2025 17:09:47.904 * DB saved on disk
+79427:C 12 Dec 2025 17:09:47.906 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:47.995 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:48.009 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:48.041 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:48.902 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:48.906 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:48.909 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:48.917 * Background saving started by pid 79437
+79437:C 12 Dec 2025 17:09:48.943 * DB saved on disk
+79437:C 12 Dec 2025 17:09:48.949 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:49.024 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:49.033 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:49.057 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:49.915 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:49.919 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:49.922 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:49.925 * Background saving started by pid 79442
+79442:C 12 Dec 2025 17:09:49.940 * DB saved on disk
+79442:C 12 Dec 2025 17:09:49.943 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:50.037 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:50.043 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:50.066 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:50.936 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:50.940 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:50.943 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:50.948 * Background saving started by pid 79450
+79450:C 12 Dec 2025 17:09:50.976 * DB saved on disk
+79450:C 12 Dec 2025 17:09:50.978 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:51.060 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:51.076 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:51.128 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:51.960 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:51.962 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:51.964 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:51.974 * Background saving started by pid 79457
+79457:C 12 Dec 2025 17:09:51.991 * DB saved on disk
+79457:C 12 Dec 2025 17:09:51.993 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:52.081 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:52.095 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:52.137 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:52.973 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:52.976 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:52.978 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:52.982 * Background saving started by pid 79464
+79464:C 12 Dec 2025 17:09:53.010 * DB saved on disk
+79464:C 12 Dec 2025 17:09:53.012 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:53.105 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:53.116 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:53.157 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:53.976 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:53.978 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:53.980 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:53.985 * Background saving started by pid 79471
+79471:C 12 Dec 2025 17:09:54.002 * DB saved on disk
+79471:C 12 Dec 2025 17:09:54.005 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:54.022 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:54.027 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:54.049 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:54.990 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:54.992 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:54.993 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:54.995 * Background saving started by pid 79476
+79476:C 12 Dec 2025 17:09:55.693 * DB saved on disk
+79476:C 12 Dec 2025 17:09:55.699 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:55.733 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:55.747 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:56.638 # Connection with replica client id #39 lost.
+79184:M 12 Dec 2025 17:09:56.977 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:56.981 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:56.990 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:56.996 * Background saving started by pid 79488
+79488:C 12 Dec 2025 17:09:57.812 * DB saved on disk
+79488:C 12 Dec 2025 17:09:57.820 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:57.858 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:57.871 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:58.695 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:58.715 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:58.718 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:58.722 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:58.726 * Background saving started by pid 79497
+79497:C 12 Dec 2025 17:09:58.840 * DB saved on disk
+79497:C 12 Dec 2025 17:09:58.846 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:58.879 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:58.898 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:09:58.955 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:09:59.787 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:09:59.791 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:09:59.793 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:09:59.798 * Background saving started by pid 79504
+79504:C 12 Dec 2025 17:09:59.809 * DB saved on disk
+79504:C 12 Dec 2025 17:09:59.812 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:09:59.905 * Background saving terminated with success
+79184:M 12 Dec 2025 17:09:59.911 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:00.049 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:00.882 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:00.884 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:00.886 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:00.889 * Background saving started by pid 79511
+79511:C 12 Dec 2025 17:10:00.908 * DB saved on disk
+79511:C 12 Dec 2025 17:10:00.911 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:00.914 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:00.921 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:00.936 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:01.887 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:01.889 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:01.892 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:01.895 * Background saving started by pid 79599
+79599:C 12 Dec 2025 17:10:01.909 * DB saved on disk
+79599:C 12 Dec 2025 17:10:01.911 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:01.940 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:01.959 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:01.998 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:02.932 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:02.938 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:02.942 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:02.947 * Background saving started by pid 79606
+79606:C 12 Dec 2025 17:10:02.975 * DB saved on disk
+79606:C 12 Dec 2025 17:10:02.979 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:03.059 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:03.063 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:03.080 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:03.954 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:03.959 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:03.962 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:03.964 * Background saving started by pid 79613
+79613:C 12 Dec 2025 17:10:03.978 * DB saved on disk
+79613:C 12 Dec 2025 17:10:03.982 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:04.072 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:04.079 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:04.118 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:04.955 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:04.958 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:04.959 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:04.963 * Background saving started by pid 79620
+79620:C 12 Dec 2025 17:10:04.980 * DB saved on disk
+79620:C 12 Dec 2025 17:10:04.983 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:04.992 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:04.996 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:05.007 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:05.984 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:05.989 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:05.991 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:05.994 * Background saving started by pid 79627
+79627:C 12 Dec 2025 17:10:06.007 * DB saved on disk
+79627:C 12 Dec 2025 17:10:06.011 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:06.106 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:06.116 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:06.156 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:06.994 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:06.997 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:07.001 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:07.006 * Background saving started by pid 79633
+79633:C 12 Dec 2025 17:10:07.020 * DB saved on disk
+79633:C 12 Dec 2025 17:10:07.026 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:07.119 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:07.129 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:07.162 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:08.009 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:08.012 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:08.016 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:08.023 * Background saving started by pid 79640
+79640:C 12 Dec 2025 17:10:08.035 * DB saved on disk
+79640:C 12 Dec 2025 17:10:08.037 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:08.137 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:08.146 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:08.180 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:09.020 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:09.022 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:09.025 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:09.028 * Background saving started by pid 79647
+79647:C 12 Dec 2025 17:10:09.043 * DB saved on disk
+79647:C 12 Dec 2025 17:10:09.046 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:09.152 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:09.160 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:09.176 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:10.046 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:10.051 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:10.056 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:10.062 * Background saving started by pid 79654
+79654:C 12 Dec 2025 17:10:10.092 * DB saved on disk
+79654:C 12 Dec 2025 17:10:10.097 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:10.169 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:10.180 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:10.201 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:11.063 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:11.068 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:11.071 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:11.075 * Background saving started by pid 79661
+79661:C 12 Dec 2025 17:10:11.095 * DB saved on disk
+79661:C 12 Dec 2025 17:10:11.100 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:11.182 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:11.192 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:11.215 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:12.074 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:12.077 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:12.080 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:12.084 * Background saving started by pid 79668
+79668:C 12 Dec 2025 17:10:12.104 * DB saved on disk
+79668:C 12 Dec 2025 17:10:12.108 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:12.196 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:12.203 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:12.221 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:13.093 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:13.096 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:13.099 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:13.111 * Background saving started by pid 79675
+79675:C 12 Dec 2025 17:10:13.121 * DB saved on disk
+79675:C 12 Dec 2025 17:10:13.124 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:13.215 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:13.221 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:13.245 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:14.095 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:14.096 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:14.097 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:14.099 * Background saving started by pid 79682
+79682:C 12 Dec 2025 17:10:14.126 * DB saved on disk
+79682:C 12 Dec 2025 17:10:14.129 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:14.229 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:14.239 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:14.276 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:15.117 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:15.119 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:15.121 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:15.123 * Background saving started by pid 79689
+79689:C 12 Dec 2025 17:10:15.134 * DB saved on disk
+79689:C 12 Dec 2025 17:10:15.136 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:15.141 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:15.145 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:15.179 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:16.125 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:16.129 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:16.131 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:16.133 * Background saving started by pid 79696
+79696:C 12 Dec 2025 17:10:16.155 * DB saved on disk
+79696:C 12 Dec 2025 17:10:16.158 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:16.254 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:16.262 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:16.291 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:17.141 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:17.144 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:17.147 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:17.152 * Background saving started by pid 79703
+79703:C 12 Dec 2025 17:10:17.171 * DB saved on disk
+79703:C 12 Dec 2025 17:10:17.175 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:17.270 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:17.279 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:17.308 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:18.158 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:18.162 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:18.166 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:18.170 * Background saving started by pid 79711
+79711:C 12 Dec 2025 17:10:18.194 * DB saved on disk
+79711:C 12 Dec 2025 17:10:18.199 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:18.287 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:18.291 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:18.304 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:19.172 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:19.175 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:19.178 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:19.181 * Background saving started by pid 79718
+79718:C 12 Dec 2025 17:10:19.190 * DB saved on disk
+79718:C 12 Dec 2025 17:10:19.193 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:19.298 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:19.311 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:19.355 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:20.195 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:20.203 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:20.209 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:20.216 * Background saving started by pid 79725
+79725:C 12 Dec 2025 17:10:20.240 * DB saved on disk
+79725:C 12 Dec 2025 17:10:20.247 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:20.324 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:20.340 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:20.365 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:21.228 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:21.233 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:21.240 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:21.248 * Background saving started by pid 79732
+79732:C 12 Dec 2025 17:10:21.263 * DB saved on disk
+79732:C 12 Dec 2025 17:10:21.266 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:21.355 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:21.361 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:21.381 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:22.223 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:22.225 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:22.228 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:22.231 * Background saving started by pid 79738
+79738:C 12 Dec 2025 17:10:22.246 * DB saved on disk
+79738:C 12 Dec 2025 17:10:22.249 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:22.267 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:22.289 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:22.314 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:23.251 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:23.257 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:23.260 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:23.264 * Background saving started by pid 79745
+79745:C 12 Dec 2025 17:10:23.291 * DB saved on disk
+79745:C 12 Dec 2025 17:10:23.296 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:23.390 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:23.395 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:23.416 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:24.244 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:24.246 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:24.248 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:24.252 * Background saving started by pid 79752
+79752:C 12 Dec 2025 17:10:24.267 * DB saved on disk
+79752:C 12 Dec 2025 17:10:24.269 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:24.307 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:24.316 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:24.339 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:25.261 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:25.264 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:25.266 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:25.269 * Background saving started by pid 79759
+79759:C 12 Dec 2025 17:10:25.286 * DB saved on disk
+79759:C 12 Dec 2025 17:10:25.289 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:25.320 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:25.327 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:25.352 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:26.276 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:26.279 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:26.282 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:26.289 * Background saving started by pid 79766
+79766:C 12 Dec 2025 17:10:26.311 * DB saved on disk
+79766:C 12 Dec 2025 17:10:26.314 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:26.330 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:26.339 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:26.361 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:27.291 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:27.294 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:27.297 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:27.300 * Background saving started by pid 79773
+79773:C 12 Dec 2025 17:10:27.325 * DB saved on disk
+79773:C 12 Dec 2025 17:10:27.327 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:27.345 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:27.352 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:27.374 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:28.315 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:28.321 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:28.326 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:28.330 * Background saving started by pid 79780
+79780:C 12 Dec 2025 17:10:28.346 * DB saved on disk
+79780:C 12 Dec 2025 17:10:28.349 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:28.361 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:28.369 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:28.400 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:29.330 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:29.331 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:29.333 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:29.336 * Background saving started by pid 79787
+79787:C 12 Dec 2025 17:10:29.342 * DB saved on disk
+79787:C 12 Dec 2025 17:10:29.345 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:29.379 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:29.398 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:29.424 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:30.355 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:30.358 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:30.361 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:30.364 * Background saving started by pid 79794
+79794:C 12 Dec 2025 17:10:30.394 * DB saved on disk
+79794:C 12 Dec 2025 17:10:30.399 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:30.499 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:30.507 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:30.528 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:31.361 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:31.363 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:31.364 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:31.366 * Background saving started by pid 79801
+79801:C 12 Dec 2025 17:10:31.389 * DB saved on disk
+79801:C 12 Dec 2025 17:10:31.392 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:31.410 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:31.414 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:31.428 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:32.380 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:32.383 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:32.387 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:32.393 * Background saving started by pid 79808
+79808:C 12 Dec 2025 17:10:32.405 * DB saved on disk
+79808:C 12 Dec 2025 17:10:32.409 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:32.423 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:32.429 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:32.449 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:33.390 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:33.392 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:33.394 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:33.397 * Background saving started by pid 79814
+79814:C 12 Dec 2025 17:10:33.405 * DB saved on disk
+79814:C 12 Dec 2025 17:10:33.407 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:33.436 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:33.440 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:33.474 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:34.405 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:34.408 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:34.410 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:34.413 * Background saving started by pid 79821
+79821:C 12 Dec 2025 17:10:34.423 * DB saved on disk
+79821:C 12 Dec 2025 17:10:34.426 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:34.445 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:34.454 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:34.487 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:35.416 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:35.419 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:35.421 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:35.424 * Background saving started by pid 79828
+79828:C 12 Dec 2025 17:10:35.432 * DB saved on disk
+79828:C 12 Dec 2025 17:10:35.435 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:35.463 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:35.472 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:35.502 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:36.439 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:36.442 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:36.444 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:36.446 * Background saving started by pid 79835
+79835:C 12 Dec 2025 17:10:36.454 * DB saved on disk
+79835:C 12 Dec 2025 17:10:36.456 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:36.477 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:36.483 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:36.510 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:37.444 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:37.445 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:37.446 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:37.448 * Background saving started by pid 79842
+79842:C 12 Dec 2025 17:10:37.457 * DB saved on disk
+79842:C 12 Dec 2025 17:10:37.459 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:37.486 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:37.493 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:37.533 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:38.459 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:38.461 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:38.463 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:38.465 * Background saving started by pid 79849
+79849:C 12 Dec 2025 17:10:38.491 * DB saved on disk
+79849:C 12 Dec 2025 17:10:38.499 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:38.606 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:38.616 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:38.649 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:39.484 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:39.489 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:39.495 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:39.503 * Background saving started by pid 79856
+79856:C 12 Dec 2025 17:10:39.523 * DB saved on disk
+79856:C 12 Dec 2025 17:10:39.528 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:39.620 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:39.627 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:39.669 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:40.490 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:40.491 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:40.493 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:40.495 * Background saving started by pid 79863
+79863:C 12 Dec 2025 17:10:40.527 * DB saved on disk
+79863:C 12 Dec 2025 17:10:40.530 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:40.535 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:40.541 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:40.555 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:41.508 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:41.519 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:41.521 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:41.524 * Background saving started by pid 79870
+79870:C 12 Dec 2025 17:10:41.536 * DB saved on disk
+79870:C 12 Dec 2025 17:10:41.539 * RDB: 0 MB of memory used by copy-on-write
+79184:M 12 Dec 2025 17:10:41.543 * Background saving terminated with success
+79184:M 12 Dec 2025 17:10:41.547 * Synchronization with replica 127.0.0.1:7003 succeeded
+79184:M 12 Dec 2025 17:10:41.561 # Connection with replica 127.0.0.1:7003 lost.
+79184:M 12 Dec 2025 17:10:42.518 * Replica 127.0.0.1:7003 asks for synchronization
+79184:M 12 Dec 2025 17:10:42.520 * Full resync requested by replica 127.0.0.1:7003
+79184:M 12 Dec 2025 17:10:42.521 * Starting BGSAVE for SYNC with target: disk
+79184:M 12 Dec 2025 17:10:42.524 * Background saving started by pid 79878
+79878:C 12 Dec 2025 17:10:42.678 * DB saved on disk
+79878:C 12 Dec 2025 17:10:42.683 * RDB: 0 MB of memory used by copy-on-write
+79184:signal-handler (1765534242) Received SIGTERM scheduling shutdown...
+79184:M 12 Dec 2025 17:10:42.755 # User requested shutdown...
+79184:M 12 Dec 2025 17:10:42.758 # There is a child saving an .rdb. Killing it!
+79184:M 12 Dec 2025 17:10:42.761 * Calling fsync() on the AOF file.
+79184:M 12 Dec 2025 17:10:42.771 # Redis is now ready to exit, bye bye...

@@ -1,0 +1,24 @@
+78776:C 12 Dec 2025 17:08:16.307 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+78776:C 12 Dec 2025 17:08:16.311 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=78776, just started
+78776:C 12 Dec 2025 17:08:16.315 # Configuration loaded
+78776:M 12 Dec 2025 17:08:16.344 * No cluster configuration found, I'm 300f1aa9d2c95d8eec79eddc86f73a94bb1d15f8
+78776:M 12 Dec 2025 17:08:16.361 * Running mode=cluster, port=7001.
+78776:M 12 Dec 2025 17:08:16.366 # Server initialized
+78776:M 12 Dec 2025 17:08:16.369 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+78776:M 12 Dec 2025 17:08:16.377 * Ready to accept connections
+78776:signal-handler (1765534117) Received SIGTERM scheduling shutdown...
+78776:M 12 Dec 2025 17:08:37.593 # User requested shutdown...
+78776:M 12 Dec 2025 17:08:37.597 * Calling fsync() on the AOF file.
+78776:M 12 Dec 2025 17:08:37.602 # Redis is now ready to exit, bye bye...
+78930:C 12 Dec 2025 17:08:41.777 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+78930:C 12 Dec 2025 17:08:41.781 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=78930, just started
+78930:C 12 Dec 2025 17:08:41.787 # Configuration loaded
+78930:M 12 Dec 2025 17:08:41.811 * No cluster configuration found, I'm 5be99e2791048ea6b13c0b5d3474428cf849c61f
+78930:M 12 Dec 2025 17:08:41.823 * Running mode=cluster, port=7001.
+78930:M 12 Dec 2025 17:08:41.826 # Server initialized
+78930:M 12 Dec 2025 17:08:41.829 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+78930:M 12 Dec 2025 17:08:41.834 * Ready to accept connections
+78930:signal-handler (1765534148) Received SIGTERM scheduling shutdown...
+78930:M 12 Dec 2025 17:09:08.372 # User requested shutdown...
+78930:M 12 Dec 2025 17:09:08.375 * Calling fsync() on the AOF file.
+78930:M 12 Dec 2025 17:09:08.378 # Redis is now ready to exit, bye bye...
