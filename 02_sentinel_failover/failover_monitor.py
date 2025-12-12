@@ -3,10 +3,11 @@ import sys
 from redis.sentinel import Sentinel, MasterNotFoundError
 
 def main():
+    # Konfigurasi Sentinel (IP GNS3)
     sentinels = [
-        ('192.168.1.10', 26379),
-        ('192.168.1.11', 26379),
-        ('192.168.1.12', 26379)
+        ('192.168.122.235', 26379),
+        ('192.168.122.92', 26379),
+        ('192.168.122.160', 26379)
     ]
 
     service_name = 'mymaster'
@@ -15,7 +16,12 @@ def main():
     
     last_master_ip = None
     
-    sentinel_connection = Sentinel(sentinels, socket_timeout=0.1)
+    # Inisialisasi koneksi ke Sentinel
+    try:
+        sentinel_connection = Sentinel(sentinels, socket_timeout=0.1)
+    except Exception as e:
+        print(f"Error initializing Sentinel connection: {e}")
+        return
 
     while True:
         try:
@@ -35,7 +41,9 @@ def main():
             print(f"[{time.strftime('%H:%M:%S')}] Master not found! (Voting in progress?)")
             time.sleep(0.5)
         except Exception as e:
-            print(f"[{time.strftime('%H:%M:%S')}] Connection Error: {e}")
+            # print(f"[{time.strftime('%H:%M:%S')}] Connection Error: {e}")
+            sys.stdout.write(".")
+            sys.stdout.flush()
             time.sleep(1)
 
 if __name__ == "__main__":
