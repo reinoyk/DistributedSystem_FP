@@ -93,7 +93,11 @@ def run_scenario_1():
                 
         sync_time = time.time() - start_sync_wait
 
-        print(f"**Replikasi selesai sepenuhnya dalam {sync_time:.4f} detik (Replication Lag).**")
+        if synced_count == NUM_WRITES:
+            print(f"**Replikasi selesai sepenuhnya dalam {sync_time:.4f} detik (Replication Lag).**")
+            print(f"✅ STATUS: SUKSES. Semua {NUM_WRITES} data berhasil direplikasi ke Replica.")
+        else:
+            print(f"❌ STATUS: GAGAL. Waktu habis ({max_wait_time}s). Hanya {synced_count}/{NUM_WRITES} data yang tersinkron.")
         print("-" * 50)
 
     except redis.exceptions.ConnectionError as e:
