@@ -1,0 +1,89 @@
+version: "3.8"
+
+networks:
+  sentinel-net:
+    driver: bridge
+
+services:
+  # --- Data Nodes ---
+  redis-node1:
+    image: redis:7-alpine
+    container_name: redis-node1
+    command: redis-server --port 6379 --repl-diskless-load on-empty-db --replica-announce-ip redis-node1 --replica-announce-port 6379
+    ports:
+      - "5900:6379"
+    networks:
+      - sentinel-net
+
+  redis-node2:
+    image: redis:7-alpine
+    container_name: redis-node2
+    command: redis-server --port 6379 --replicaof redis-node1 6379 --repl-diskless-load on-empty-db --replica-announce-ip redis-node2 --replica-announce-port 6379
+    ports:
+      - "5901:6379"
+    networks:
+      - sentinel-net
+    depends_on:
+      - redis-node1
+
+  redis-node3:
+    image: redis:7-alpine
+    container_name: redis-node3
+    command: redis-server --port 6379 --replicaof redis-node1 6379 --repl-diskless-load on-empty-db --replica-announce-ip redis-node3 --replica-announce-port 6379
+    ports:
+      - "5902:6379"
+    networks:
+      - sentinel-net
+    depends_on:
+      - redis-node1
+
+  # --- Sentinel Nodes ---
+  # Sentinel needs a config file to start, and it needs to be writable if we want it to persist changes (optional here, but good practice).
+  # We use a command to copy the config to /tmp so it is writable, then start sentinel.
+
+  sentinel-1:
+    image: redis:7-alpine
+    container_name: sentinel-1
+    volumes:
+      - ./config/sentinel_docker.conf:/etc/redis/sentinel_base.conf
+    command: >
+      sh -c "cp /etc/redis/sentinel_base.conf /tmp/sentinel.conf &&
+             redis-sentinel /tmp/sentinel.conf"
+    ports:
+      - "26379:26379"
+    networks:
+      - sentinel-net
+    depends_on:
+      - redis-node1
+      - redis-node2
+      - redis-node3
+
+  sentinel-2:
+    image: redis:7-alpine
+    container_name: sentinel-2
+    volumes:
+      - ./config/sentinel_docker.conf:/etc/redis/sentinel_base.conf
+    command: >
+      sh -c "cp /etc/redis/sentinel_base.conf /tmp/sentinel.conf &&
+             redis-sentinel /tmp/sentinel.conf"
+    ports:
+      - "26380:26379"
+    networks:
+      - sentinel-net
+    depends_on:
+      - redis-node1
+
+  sentinel-3:
+    image: redis:7-alpine
+    container_name: sentinel-3
+    volumes:
+      - ./config/sentinel_docker.conf:/etc/redis/sentinel_base.conf
+    command: >
+      sh -c "cp /etc/redis/sentinel_base.conf /tmp/sentinel.conf &&
+             redis-sentinel /tmp/sentinel.conf"
+    ports:
+      - "26381:26379"
+    networks:
+      - sentinel-net
+    depends_on:
+      - redis-node1
