@@ -4,9 +4,9 @@ from redis.cluster import RedisCluster
 def main():
     # Cluster Configuration
     startup_nodes = [
-        {"host": "192.168.1.31", "port": "6379"},
-        {"host": "192.168.1.32", "port": "6379"},
-        {"host": "192.168.1.33", "port": "6379"}
+        {"host": "127.0.0.1", "port": "7000"},
+        {"host": "127.0.0.1", "port": "7001"},
+        {"host": "127.0.0.1", "port": "7002"}
     ]
 
     print("Connecting to Redis Cluster...")
@@ -14,7 +14,7 @@ def main():
     # but providing multiple helps with robustness.
     # Note: 'redis-py' 4.x+ supports cluster via RedisCluster class (formerly redis-py-cluster)
     try:
-        rc = RedisCluster(host='192.168.1.31', port=6379, decode_responses=True)
+        rc = RedisCluster(host='127.0.0.1', port=7000, decode_responses=True)
         # Alternatively check connection
         rc.ping()
         print("Connected successfully.")
@@ -38,11 +38,11 @@ def main():
         # Identify which node holds the key
         # In redis-py, we can get the connection for a specific key
         node_conn = rc.get_node_from_key(key)
-        node_ip = node_conn.host
+        node_name = f"{node_conn.host}:{node_conn.port}"
         
-        if node_ip not in node_distribution:
-            node_distribution[node_ip] = 0
-        node_distribution[node_ip] += 1
+        if node_name not in node_distribution:
+            node_distribution[node_name] = 0
+        node_distribution[node_name] += 1
 
     print("\n" + "=" * 40)
     print("SHARDING DISTRIBUTION SUMMARY")

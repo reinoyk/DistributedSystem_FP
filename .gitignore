@@ -1,0 +1,11 @@
+
+# Redis runtime files
+*.log
+*.rdb
+*.aof
+nodes.conf
+appendonlydir/
+
+# Python
+__pycache__/
+*.py[cod]
