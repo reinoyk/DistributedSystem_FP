@@ -3,12 +3,11 @@ import time
 from datetime import datetime
 import sys
 
-# Konfigurasi IP Sentinel (Docker Environment - Localhost Mapped)
-# Jika kembali ke GNS3, ubah IP ini kembali ke IP VM Anda (192.168.122.x)
+# Konfigurasi IP Sentinel (GNS3 Environment)
 sentinels = [
-    ('localhost', 26379),
-    ('localhost', 26380),
-    ('localhost', 26381)
+    ('192.168.122.235', 26379), # Node 1
+    ('192.168.122.92', 26379),  # Node 2
+    ('192.168.122.160', 26379)  # Node 3
 ]
 
 service_name = 'mymaster'
@@ -30,8 +29,8 @@ try:
         last_master = master[0]
         last_seen_time = time.time() # Catat waktu terakhir lihat master hidup
         
-        print("\n=== MONITORING AKTIF: Silakan Matikan Master di Docker ===")
-        print("(Gunakan: docker stop redis-node1)")
+        print("\n=== MONITORING AKTIF: Silakan Matikan Master di GNS3 ===")
+        print("(Gunakan: Suspend/Stop Node 1 di GNS3)")
 
         while True:
             try:
