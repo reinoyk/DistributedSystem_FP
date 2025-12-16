@@ -90,7 +90,7 @@ Untuk membuktikan bahwa Replica menggantikan Master yang mati:
 4. **Hidupkan Kembali Node Lama**
    Nyalakan kembali node 7000.
    ```bash
-   cd node-7000 && redis-server redis.conf &
+   cd node-1 && redis-server redis.conf &
    ```
    Saat dicek lagi (`redis-cli -p 7001 cluster nodes`), node 7000 akan bergabung kembali, tetapi sekarang dia akan menjadi **slave** dari master yang baru.
 

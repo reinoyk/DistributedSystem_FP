@@ -1,21 +1,22 @@
 import redis
-from redis.cluster import RedisCluster
+from redis.cluster import RedisCluster, ClusterNode
 
 def main():
-    # Cluster Configuration
+    # Cluster Configuration for GNS3
     startup_nodes = [
-        {"host": "127.0.0.1", "port": "7000"},
-        {"host": "127.0.0.1", "port": "7001"},
-        {"host": "127.0.0.1", "port": "7002"}
+        ClusterNode("192.168.122.250", 5900), # Node 1
+        ClusterNode("192.168.122.58", 5901),  # Node 2
+        ClusterNode("192.168.122.170", 5902), # Node 3
+        ClusterNode("192.168.122.11", 5903),  # Node 4
+        ClusterNode("192.168.122.9", 5904),   # Node 5
+        ClusterNode("192.168.122.210", 5905)  # Node 6
     ]
 
     print("Connecting to Redis Cluster...")
-    # By default, redis-py handles cluster discovery if we point to one node, 
-    # but providing multiple helps with robustness.
-    # Note: 'redis-py' 4.x+ supports cluster via RedisCluster class (formerly redis-py-cluster)
     try:
-        rc = RedisCluster(host='127.0.0.1', port=7000, decode_responses=True)
-        # Alternatively check connection
+        # Note: We can connect to any node. 
+        # Ensure your client machine (Node Client) can reach these IPs.
+        rc = RedisCluster(startup_nodes=startup_nodes, decode_responses=True)
         rc.ping()
         print("Connected successfully.")
     except Exception as e:
@@ -33,16 +34,18 @@ def main():
         value = f"data_{i}"
         
         # Write
-        rc.set(key, value)
-        
-        # Identify which node holds the key
-        # In redis-py, we can get the connection for a specific key
-        node_conn = rc.get_node_from_key(key)
-        node_name = f"{node_conn.host}:{node_conn.port}"
-        
-        if node_name not in node_distribution:
-            node_distribution[node_name] = 0
-        node_distribution[node_name] += 1
+        try:
+            rc.set(key, value)
+            
+            # Identify which node holds the key
+            node_conn = rc.get_node_from_key(key)
+            node_name = f"{node_conn.host}:{node_conn.port}"
+            
+            if node_name not in node_distribution:
+                node_distribution[node_name] = 0
+            node_distribution[node_name] += 1
+        except Exception as e:
+            print(f"Error checking key {key}: {e}")
 
     print("\n" + "=" * 40)
     print("SHARDING DISTRIBUTION SUMMARY")
