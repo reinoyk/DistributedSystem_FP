@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  # --- Node Master ---
+  master:
+    image: redis:7-alpine
+    container_name: master
+    command: redis-server --appendonly no --protected-mode no
+    ports:
+      - "5000:6379"  # Port Host 5000 -> Container 6379
+    networks:
+      - redis-net
+
+  # --- Node Replica 1 ---
+  replica-1:
+    image: redis:7-alpine
+    container_name: replica-1
+    # Perintah ini otomatis membuat node ini menjadi slave dari "master"
+    command: redis-server --replicaof master 6379 --appendonly no --protected-mode no
+    ports:
+      - "5001:6379"  # Port Host 5001 -> Container 6379
+    depends_on:
+      - master
+    networks:
+      - redis-net
+
+  # --- Node Replica 2 ---
+  replica-2:
+    image: redis:7-alpine
+    container_name: replica-2
+    command: redis-server --replicaof master 6379 --appendonly no --protected-mode no
+    ports:
+      - "5002:6379"  # Port Host 5002 -> Container 6379
+    depends_on:
+      - master
+    networks:
+      - redis-net
+
+  # --- Node Client (Tester) ---
+  client:
+    image: python:3.9-alpine
+    container_name: client
+    # Install library redis lalu tahan container agar tetap hidup (standby)
+    command: sh -c "pip install redis && tail -f /dev/null"
+    volumes:
+      - ./src:/app  # Mounting folder src lokal ke dalam container
+    working_dir: /app
+    depends_on:
+      - master
+      - replica-1
+      - replica-2
+    networks:
+      - redis-net
+
+networks:
+  redis-net:
+    driver: bridge
